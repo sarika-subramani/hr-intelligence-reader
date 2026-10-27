@@ -37,7 +37,7 @@ jobs:
 
       - name: Generate daily HR Reader
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.HR_NEWS_READER }}
           OPENAI_MODEL: gpt-5.5
         run: python generate_reader.py
 
